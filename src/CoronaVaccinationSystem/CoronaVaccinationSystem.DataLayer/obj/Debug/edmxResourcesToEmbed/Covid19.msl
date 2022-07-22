@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Covid19_DBModelStoreContainer" CdmEntityContainer="Covid19_DBEntities">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="Covid19_DBModel.Admins">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="AdminId" ColumnName="AdminId" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deputies">
+      <EntityTypeMapping TypeName="Covid19_DBModel.Deputies">
+        <MappingFragment StoreEntitySet="Deputies">
+          <ScalarProperty Name="DeputyId" ColumnName="DeputyId" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vaccines">
+      <EntityTypeMapping TypeName="Covid19_DBModel.Vaccines">
+        <MappingFragment StoreEntitySet="Vaccines">
+          <ScalarProperty Name="VaccineId" ColumnName="VaccineId" />
+          <ScalarProperty Name="ProduceCountry" ColumnName="ProduceCountry" />
+          <ScalarProperty Name="EntryDose" ColumnName="EntryDose" />
+          <ScalarProperty Name="VaccineName" ColumnName="VaccineName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="Covid19_DBModel.Patients">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="ScondDoseDate" ColumnName="ScondDoseDate" />
+          <ScalarProperty Name="FirstDoseDate" ColumnName="FirstDoseDate" />
+          <ScalarProperty Name="SecondDoze" ColumnName="SecondDoze" />
+          <ScalarProperty Name="FirstDose" ColumnName="FirstDose" />
+          <ScalarProperty Name="VaccineName" ColumnName="VaccineName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PatientId" ColumnName="PatientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
